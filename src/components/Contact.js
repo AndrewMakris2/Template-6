@@ -41,6 +41,7 @@ export function Contact({ contact, booking }) {
       <button type="submit" class="${buttonClasses.solid} disabled:opacity-60" data-submit data-label="${esc(form.submitLabel)}" data-sending-label="${esc(form.sendingLabel)}">${esc(form.submitLabel)} ${icon('arrowRight', 'h-4 w-4')}</button>
       <p class="hidden border-l-2 border-accent pl-4 text-base text-ink" role="status" data-form-success>${esc(form.successMessage)}</p>
       <p class="hidden border-l-2 border-accent pl-4 text-base text-ink" role="alert" data-form-error>${esc(form.errorMessage)}</p>
+      <p class="text-sm text-muted">${esc(form.privacyNote)} <a href="/privacy/" class="underline underline-offset-4">${esc(form.privacyLabel)}</a></p>
     </form>
     <div class="lg:col-span-4 lg:col-start-9">
       <p class="text-lg font-light leading-relaxed text-muted">${esc(contact.intro)}</p>
